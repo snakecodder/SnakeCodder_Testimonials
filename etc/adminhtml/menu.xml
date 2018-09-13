@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+	<menu>
+		<add id="SnakeCodder::top_level" module="SnakeCodder_Testimonials" resource="Magento_Backend::content" sortOrder="9999" title="SnakeCodder"/>
+		<add action="snakecodder_testimonials/testimonial/index" id="SnakeCodder_Testimonials::snakecodder_testimonials_testimonial" module="SnakeCodder_Testimonials" parent="SnakeCodder::top_level" resource="Magento_Backend::content" sortOrder="9999" title="testimonial"/>
+	</menu>
+</config>

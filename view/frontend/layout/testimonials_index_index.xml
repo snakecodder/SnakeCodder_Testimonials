@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+
+	<body>
+		<referenceContainer name="content">
+			<block as="test" class="SnakeCodder\Testimonials\Block\Test" name="test" template="SnakeCodder_Testimonials::test.phtml"/>
+			
+		</referenceContainer>
+	</body>
+</page>
