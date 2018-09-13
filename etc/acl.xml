@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Acl/etc/acl.xsd">
+	<acl>
+		<resources>
+			<resource id="Magento_Backend::admin">
+				<resource id="SnakeCodder_Testimonials::testimonial" sortOrder="10" title="testimonial">
+					<resource id="SnakeCodder_Testimonials::testimonial_save" sortOrder="10" title="Save testimonial"/>
+					<resource id="SnakeCodder_Testimonials::testimonial_delete" sortOrder="20" title="Delete testimonial"/>
+					<resource id="SnakeCodder_Testimonials::testimonial_update" sortOrder="30" title="Update testimonial"/>
+					<resource id="SnakeCodder_Testimonials::testimonial_view" sortOrder="40" title="View testimonial"/>
+				</resource>
+			</resource>
+		</resources>
+	</acl>
+</config>

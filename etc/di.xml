@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+	<preference for="SnakeCodder\Testimonials\Api\TestimonialRepositoryInterface" type="SnakeCodder\Testimonials\Model\TestimonialRepository"/>
+	<preference for="SnakeCodder\Testimonials\Api\Data\TestimonialInterface" type="SnakeCodder\Testimonials\Model\Testimonial"/>
+	<preference for="SnakeCodder\Testimonials\Api\Data\TestimonialSearchResultsInterface" type="Magento\Framework\Api\SearchResults"/>
+	<virtualType name="SnakeCodder\Testimonials\Model\ResourceModel\Testimonial\Grid\Collection" type="Magento\Framework\View\Element\UiComponent\DataProvider\SearchResult">
+		<arguments>
+			<argument name="mainTable" xsi:type="string">snakecodder_testimonials_testimonial</argument>
+			<argument name="resourceModel" xsi:type="string">SnakeCodder\Testimonials\Model\ResourceModel\Testimonial\Collection</argument>
+		</arguments>
+	</virtualType>
+	<type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+		<arguments>
+			<argument name="collections" xsi:type="array">
+				<item name="snakecodder_testimonials_testimonial_grid_data_source" xsi:type="string">SnakeCodder\Testimonials\Model\ResourceModel\Testimonial\Grid\Collection</item>
+			</argument>
+		</arguments>
+	</type>
+</config>
