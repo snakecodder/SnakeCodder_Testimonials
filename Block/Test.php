@@ -6,7 +6,8 @@ namespace SnakeCodder\Testimonials\Block;
 class Test extends \Magento\Framework\View\Element\Template
 {
     private $testCollection;
-    private $_storeManager;
+    // private $_storeManager;
+    protected $_storeManager;
     /**
      * Constructor
      *
@@ -36,9 +37,8 @@ class Test extends \Magento\Framework\View\Element\Template
             // companymodule is given in routes.xml
             // controller_name is folder name inside controller folder
             // action is php file name inside above controller_name folder
-        $baseUrl = $this->_storeManager->getStore()->getBaseUrl(\Magento\Framework\UrlInterface::URL_TYPE_WEB);
-        return $baseUrl.'/testimonials/form/index';
+        $baseUrl = $this->_storeManager->getStore()->getBaseUrl();
+        return $baseUrl.'testimonials/Save/Index';
         // here controller_name is index, action is booking
     }
-
 }
