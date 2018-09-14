@@ -3,7 +3,7 @@
 	<body>
 		<referenceContainer name="content">
 			
-			<block name="test1" template="SnakeCodder_Testimonials::form.phtml"/>
+			<block name="test1" class="SnakeCodder\Testimonials\Block\Test" template="SnakeCodder_Testimonials::form.phtml"/>
 		</referenceContainer>
 	</body>
 </page>
